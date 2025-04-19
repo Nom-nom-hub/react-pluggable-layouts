@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Pluggable Layouts - Flexible Layout Management for React Apps</title>
+    <meta name="description" content="A powerful library for creating pluggable, modular layouts in React applications. Customize your app's layout with ease.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="#">React Pluggable Layouts</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#usage">Usage</a></li>
+                        <li><a href="#examples">Examples</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <a href="https://github.com/Nom-nom-hub/react-pluggable-layouts" class="github-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content animate-on-scroll">
+                    <h1>Flexible Layout Management for React Apps</h1>
+                    <p class="hero-description">
+                        Create dynamic, customizable, and pluggable layouts for your React applications with ease.
+                        Perfect for apps that need flexible layouts and component composition.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#installation" class="btn btn-primary">Get Started</a>
+                        <a href="https://github.com/Nom-nom-hub/react-pluggable-layouts" class="btn btn-secondary" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate-on-scroll">
+                    <img src="assets/hero-illustration.svg" alt="React Pluggable Layouts illustration">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>Pluggable System</h3>
+                        <p>Easily add, remove, or replace components in your layout without changing the core structure.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>Dynamic Layouts</h3>
+                        <p>Create different layouts for different sections of your app or based on user preferences.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Built with responsiveness in mind - adapt layouts for mobile, tablet, and desktop views.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h3>Modular Architecture</h3>
+                        <p>Compose complex layouts from simple, reusable building blocks and components.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3>Extensible</h3>
+                        <p>Easily extend functionality with plugins and custom components to fit your project needs.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Developer Friendly</h3>
+                        <p>Intuitive API with TypeScript support and comprehensive documentation for developers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="installation">
+            <div class="container">
+                <h2>Installation</h2>
+                <div class="installation-steps">
+                    <div class="installation-step animate-on-scroll">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Install the package</h3>
+                            <div class="code-block">
+                                <pre><code>npm install react-pluggable-layouts</code></pre>
+                                <button class="copy-code-button">Copy</button>
+                            </div>
+                            <p>Or with yarn:</p>
+                            <div class="code-block">
+                                <pre><code>yarn add react-pluggable-layouts</code></pre>
+                                <button class="copy-code-button">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="installation-step animate-on-scroll">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Import in your project</h3>
+                            <div class="code-block">
+                                <pre><code>import { LayoutProvider, Slot, useLayout } from 'react-pluggable-layouts';</code></pre>
+                                <button class="copy-code-button">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="installation-step animate-on-scroll">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Set up the Provider</h3>
+                            <div class="code-block">
+                                <pre><code>function App() {
+  return (
+    &lt;LayoutProvider&gt;
+      &lt;YourAppComponents /&gt;
+    &lt;/LayoutProvider&gt;
+  );
+}</code></pre>
+                                <button class="copy-code-button">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="usage" class="usage">
+            <div class="container">
+                <h2>How to Use</h2>
+                <div class="usage-example animate-on-scroll">
+                    <div class="tabs">
+                        <button class="code-tab active" data-target="basic">Basic Usage</button>
+                        <button class="code-tab" data-target="advanced">Advanced Usage</button>
+                        <button class="code-tab" data-target="custom">Custom Layouts</button>
+                    </div>
+                    <div class="code-panels">
+                        <div class="code-panel active" data-id="basic">
+                            <div class="code-block">
+                                <pre><code>// Define your layout
+const MainLayout = () => {
+  return (
+    &lt;div className="main-layout"&gt;
+      &lt;header&gt;
+        &lt;Slot name="header" fallback={&lt;DefaultHeader /&gt;} /&gt;
+      &lt;/header&gt;
+      
+      &lt;div className="content"&gt;
+        &lt;aside&gt;
+          &lt;Slot name="sidebar" fallback={&lt;DefaultSidebar /&gt;} /&gt;
+        &lt;/aside&gt;
+        
+        &lt;main&gt;
+          &lt;Slot name="content" /&gt;
+        &lt;/main&gt;
+      &lt;/div&gt;
+      
+      &lt;footer&gt;
+        &lt;Slot name="footer" fallback={&lt;DefaultFooter /&gt;} /&gt;
+      &lt;/footer&gt;
+    &lt;/div&gt;
+  );
+};</code></pre>
+                                <button class="copy-code-button">Copy</button>
+                            </div>
+                        </div>
+                        <div class="code-panel" data-id="advanced">
+                            <div class="code-block">
+                                <pre><code>// Advanced: Using dynamic layout switching
+import { useLayout } from 'react-pluggable-layouts';
+
+const MyApp = () => {
+  const { switchLayout, registerComponent } = useLayout();
+  
+  // Register components for slots
+  useEffect(() => {
+    registerComponent('header', &lt;CustomHeader /&gt;);
+    registerComponent('sidebar', &lt;CustomSidebar /&gt;);
+    registerComponent('content', &lt;DashboardContent /&gt;);
+  }, []);
+  
+  const switchToDashboard = () => {
+    switchLayout('dashboard');
+    registerComponent('content', &lt;DashboardContent /&gt;);
+  };
+  
+  const switchToSettings = () => {
+    switchLayout('settings');
+    registerComponent('content', &lt;SettingsContent /&gt;);
+    registerComponent('sidebar', &lt;SettingsSidebar /&gt;);
+  };
+  
+  return (
+    &lt;div&gt;
+      &lt;button onClick={switchToDashboard}&gt;Dashboard&lt;/button&gt;
+      &lt;button onClick={switchToSettings}&gt;Settings&lt;/button&gt;
+      {/* Layout will render here */}
+    &lt;/div&gt;
+  );
+};</code></pre>
+                                <button class="copy-code-button">Copy</button>
+                            </div>
+                        </div>
+                        <div class="code-panel" data-id="custom">
+                            <div class="code-block">
+                                <pre><code>// Creating custom layouts with different configurations
+import { registerLayout } from 'react-pluggable-layouts';
+
+// Register multiple layouts
+useEffect(() => {
+  // Standard layout
+  registerLayout('standard', &lt;MainLayout /&gt;);
+  
+  // Compact layout (no sidebar)
+  registerLayout('compact', &lt;CompactLayout /&gt;);
+  
+  // Fullscreen layout (for immersive views)
+  registerLayout('fullscreen', &lt;FullscreenLayout /&gt;);
+  
+  // Print layout (optimized for printing)
+  registerLayout('print', &lt;PrintLayout /&gt;);
+}, []);
+
+// Custom layout with specific props
+const CompactLayout = () => (
+  &lt;div className="compact-layout"&gt;
+    &lt;header&gt;
+      &lt;Slot name="header" fallback={&lt;MinimalHeader /&gt;} /&gt;
+    &lt;/header&gt;
+    
+    &lt;main className="compact-content"&gt;
+      &lt;Slot name="content" /&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+      &lt;Slot name="footer" fallback={&lt;MinimalFooter /&gt;} /&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+);</code></pre>
+                                <button class="copy-code-button">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="examples" class="examples">
+            <div class="container">
+                <h2>Example Layouts</h2>
+                <div class="example-layouts">
+                    <div class="example-layout animate-on-scroll">
+                        <div class="example-image">
+                            <img src="assets/dashboard-layout.svg" alt="Dashboard Layout Example">
+                        </div>
+                        <div class="example-content">
+                            <h3>Dashboard Layout</h3>
+                            <p>Perfect for admin panels and data-heavy applications with sidebar navigation, header, and multiple content sections.</p>
+                            <a href="#" class="btn btn-sm">View Example</a>
+                        </div>
+                    </div>
+                    <div class="example-layout animate-on-scroll">
+                        <div class="example-image">
+                            <img src="assets/blog-layout.svg" alt="Blog Layout Example">
+                        </div>
+                        <div class="example-content">
+                            <h3>Blog Layout</h3>
+                            <p>Clean layout for content-focused sites with header, customizable sidebar, and optimized reading experience.</p>
+                            <a href="#" class="btn btn-sm">View Example</a>
+                        </div>
+                    </div>
+                    <div class="example-layout animate-on-scroll">
+                        <div class="example-image">
+                            <img src="assets/ecommerce-layout.svg" alt="E-commerce Layout Example">
+                        </div>
+                        <div class="example-content">
+                            <h3>E-commerce Layout</h3>
+                            <p>Product-focused layout with category navigation, product grid, filtering options, and cart integration.</p>
+                            <a href="#" class="btn btn-sm">View Example</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item animate-on-scroll">
+                        <h3>How does this differ from React Router?</h3>
+                        <p>While React Router handles navigation between routes, React Pluggable Layouts focuses on layout composition and component placement within those routes. They work great together!</p>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <h3>Can I use this with Next.js?</h3>
+                        <p>Yes! React Pluggable Layouts works with any React-based framework including Next.js, Gatsby, Create React App, and Vite projects.</p>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <h3>Is it TypeScript compatible?</h3>
+                        <p>Absolutely! The library is written in TypeScript and provides comprehensive type definitions for a great developer experience.</p>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <h3>Does it affect performance?</h3>
+                        <p>The library is designed to be lightweight and optimized for performance. It uses React's context API efficiently with minimal overhead.</p>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <h3>Can I nest layouts?</h3>
+                        <p>Yes, you can create nested layouts by placing Slot components within other components that are registered to slots.</p>
+                    </div>
+                    <div class="faq-item animate-on-scroll">
+                        <h3>Is server-side rendering supported?</h3>
+                        <p>Yes, the library fully supports server-side rendering with Next.js and similar frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2>Ready to build flexible React layouts?</h2>
+                    <p>Start creating dynamic and modular interfaces with React Pluggable Layouts today.</p>
+                    <div class="cta-buttons">
+                        <a href="#installation" class="btn btn-primary">Get Started</a>
+                        <a href="https://github.com/Nom-nom-hub/react-pluggable-layouts" class="btn btn-secondary" target="_blank" rel="noopener">
+                            View Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">React Pluggable Layouts</a>
+                    <p>Flexible Layout Management for React Apps</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Documentation</h4>
+                        <ul>
+                            <li><a href="#">Getting Started</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Examples</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Discord</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Stack Overflow</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>More</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Showcase</a></li>
+                            <li><a href="#">Contribute</a></li>
+                            <li><a href="#">Changelog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 React Pluggable Layouts. MIT Licensed.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Nom-nom-hub/react-pluggable-layouts" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.npmjs.com/package/react-pluggable-layouts" target="_blank" rel="noopener"><i class="fab fa-npm"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 

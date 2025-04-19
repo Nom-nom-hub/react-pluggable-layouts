@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#646cff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a488ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="300" rx="10" fill="#1a1a1a" opacity="0.05"/>
+  
+  <!-- Header -->
+  <rect x="10" y="10" width="380" height="50" rx="5" fill="url(#grad1)" opacity="0.7"/>
+  <rect x="25" y="25" width="100" height="20" rx="3" fill="white" opacity="0.9"/>
+  <rect x="220" y="25" width="40" height="20" rx="3" fill="white" opacity="0.4"/>
+  <rect x="270" y="25" width="40" height="20" rx="3" fill="white" opacity="0.4"/>
+  <rect x="320" y="25" width="40" height="20" rx="3" fill="white" opacity="0.4"/>
+  
+  <!-- Blog Content Area -->
+  <rect x="10" y="70" width="260" height="220" rx="5" fill="white" opacity="0.1"/>
+  
+  <!-- Blog Header -->
+  <rect x="30" y="90" width="220" height="30" rx="2" fill="white" opacity="0.7"/>
+  
+  <!-- Blog Featured Image -->
+  <rect x="30" y="130" width="220" height="80" rx="5" fill="url(#grad1)" opacity="0.3"/>
+  
+  <!-- Blog Content -->
+  <rect x="30" y="220" width="220" height="10" rx="2" fill="white" opacity="0.5"/>
+  <rect x="30" y="240" width="220" height="10" rx="2" fill="white" opacity="0.5"/>
+  <rect x="30" y="260" width="180" height="10" rx="2" fill="white" opacity="0.5"/>
+  
+  <!-- Sidebar -->
+  <rect x="280" y="70" width="110" height="220" rx="5" fill="white" opacity="0.1"/>
+  
+  <!-- Search Box -->
+  <rect x="295" y="90" width="80" height="20" rx="5" fill="white" opacity="0.4"/>
+  
+  <!-- Categories Section -->
+  <rect x="295" y="130" width="60" height="10" rx="2" fill="white" opacity="0.7"/>
+  <rect x="295" y="150" width="80" height="10" rx="2" fill="white" opacity="0.4"/>
+  <rect x="295" y="170" width="80" height="10" rx="2" fill="white" opacity="0.4"/>
+  <rect x="295" y="190" width="80" height="10" rx="2" fill="white" opacity="0.4"/>
+  
+  <!-- Recent Posts -->
+  <rect x="295" y="220" width="60" height="10" rx="2" fill="white" opacity="0.7"/>
+  <rect x="295" y="240" width="80" height="10" rx="2" fill="white" opacity="0.4"/>
+  <rect x="295" y="260" width="80" height="10" rx="2" fill="white" opacity="0.4"/>
+</svg> 
