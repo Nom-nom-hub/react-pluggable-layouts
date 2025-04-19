@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - React Pluggable Layouts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <meta name="description" content="The official blog for React Pluggable Layouts - tutorials, news, and updates">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon"></div>
+                        React Pluggable Layouts
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html" class="active">Blog</a></li>
+                        <li><a href="showcase.html">Showcase</a></li>
+                        <li><a href="contribute.html">Contribute</a></li>
+                        <li><a href="changelog.html">Changelog</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <a href="https://github.com/Nom-nom-hub/react-pluggable-layouts" class="github-link" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-header">
+            <div class="container">
+                <h1>Blog</h1>
+                <p>Tutorials, updates, and insights about React Pluggable Layouts</p>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <div class="container">
+                <div class="blog-posts">
+                    <!-- Blog post card 1 -->
+                    <article class="blog-post-card animate-on-scroll">
+                        <div class="post-date">June 15, 2023</div>
+                        <h2>Getting Started with React Pluggable Layouts</h2>
+                        <p>Learn how to implement a flexible layout system in your React applications with our pluggable layouts library.</p>
+                        <div class="post-meta">
+                            <span class="post-tag">Tutorial</span>
+                            <span class="post-tag">Beginner</span>
+                        </div>
+                        <a href="#" class="post-link">Read More</a>
+                    </article>
+
+                    <!-- Blog post card 2 -->
+                    <article class="blog-post-card animate-on-scroll">
+                        <div class="post-date">July 2, 2023</div>
+                        <h2>Creating Dynamic Dashboards with Slot Components</h2>
+                        <p>A deep dive into building flexible dashboard interfaces where users can customize their experience using slots.</p>
+                        <div class="post-meta">
+                            <span class="post-tag">Advanced</span>
+                            <span class="post-tag">Dashboards</span>
+                        </div>
+                        <a href="#" class="post-link">Read More</a>
+                    </article>
+
+                    <!-- Blog post card 3 -->
+                    <article class="blog-post-card animate-on-scroll">
+                        <div class="post-date">August 8, 2023</div>
+                        <h2>Handling Asynchronous Layouts in React Applications</h2>
+                        <p>Discover techniques for loading and rendering layouts asynchronously to improve performance and user experience.</p>
+                        <div class="post-meta">
+                            <span class="post-tag">Performance</span>
+                            <span class="post-tag">Advanced</span>
+                        </div>
+                        <a href="#" class="post-link">Read More</a>
+                    </article>
+
+                    <!-- Coming soon placeholder -->
+                    <div class="blog-coming-soon animate-on-scroll">
+                        <div class="coming-soon-badge">More Articles Coming Soon</div>
+                        <h2>Stay tuned for more React Pluggable Layouts content!</h2>
+                        <p>We're working on a series of tutorials, case studies, and best practices to help you get the most out of React Pluggable Layouts.</p>
+                        <p>Subscribe to our newsletter to be notified when new content is published.</p>
+                        
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">React Pluggable Layouts</a>
+                    <p>A flexible layout system for React applications</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Documentation</h4>
+                        <ul>
+                            <li><a href="index.html#installation">Installation</a></li>
+                            <li><a href="index.html#usage">Usage</a></li>
+                            <li><a href="index.html#examples">Examples</a></li>
+                            <li><a href="index.html#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="showcase.html">Showcase</a></li>
+                            <li><a href="contribute.html">Contribute</a></li>
+                            <li><a href="changelog.html">Changelog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="https://github.com/Nom-nom-hub/react-pluggable-layouts" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                            <li><a href="https://www.npmjs.com/package/react-pluggable-layouts" target="_blank" rel="noopener noreferrer">npm</a></li>
+                            <li><a href="https://github.com/Nom-nom-hub/react-pluggable-layouts/issues" target="_blank" rel="noopener noreferrer">Issues</a></li>
+                            <li><a href="https://github.com/Nom-nom-hub/react-pluggable-layouts/releases" target="_blank" rel="noopener noreferrer">Releases</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 React Pluggable Layouts. MIT License.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Nom-nom-hub/react-pluggable-layouts" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://x.com/ReactPluggable" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 
