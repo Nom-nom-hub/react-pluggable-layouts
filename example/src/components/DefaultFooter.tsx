@@ -68,9 +68,7 @@ const DefaultFooter: React.FC = () => {
         <div>
           <div style={{ fontWeight: 'bold', marginBottom: '10px', fontSize: '0.95rem' }}>Community</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <FooterLink href="https://twitter.com">Twitter</FooterLink>
-            <FooterLink href="https://discord.com">Discord</FooterLink>
-            <FooterLink href="https://stackoverflow.com/questions/tagged/react-pluggable-layouts">Stack Overflow</FooterLink>
+            <FooterLink href="https://x.com/ReactPluggable">Twitter</FooterLink>
             <FooterLink href="#contribute">Contribute</FooterLink>
           </div>
         </div>
