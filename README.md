@@ -221,4 +221,4 @@ Returns: Boolean indicating if a component was successfully unregistered.
 
 ## License
 
-MIT 
+MIT License. See [LICENSE](LICENSE) file for details. 
