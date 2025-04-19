@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/react-pluggable-layouts.git"
+    "url": "git+https://github.com/Nom-nom-hub/react-pluggable-layouts.git"
   },
-  "homepage": "https://github.com/yourusername/react-pluggable-layouts#readme",
+  "homepage": "https://github.com/Nom-nom-hub/react-pluggable-layouts#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/react-pluggable-layouts/issues"
+    "url": "https://github.com/Nom-nom-hub/react-pluggable-layouts/issues"
   },
   "keywords": [
     "react",
@@ -31,7 +31,7 @@
     "slots",
     "components"
   ],
-  "author": "",
+  "author": "Nom-nom-hub",
   "license": "MIT",
   "peerDependencies": {
     "react": "^18.0.0",

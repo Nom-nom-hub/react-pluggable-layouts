@@ -53,7 +53,7 @@ const DefaultHeader: React.FC = () => {
         
         <div className="header-actions" style={{ display: 'flex', gap: '12px' }}>
           <a 
-            href="https://github.com/username/react-pluggable-layouts" 
+            href="https://github.com/Nom-nom-hub/react-pluggable-layouts" 
             target="_blank" 
             rel="noopener noreferrer"
             style={{
