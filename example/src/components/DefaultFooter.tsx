@@ -48,10 +48,10 @@ const DefaultFooter: React.FC = () => {
         <div>
           <div style={{ fontWeight: 'bold', marginBottom: '10px', fontSize: '0.95rem' }}>Resources</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <FooterLink href="https://github.com/username/react-pluggable-layouts">GitHub Repository</FooterLink>
+            <FooterLink href="https://github.com/Nom-nom-hub/react-pluggable-layouts">GitHub Repository</FooterLink>
             <FooterLink href="https://www.npmjs.com/package/react-pluggable-layouts">NPM Package</FooterLink>
-            <FooterLink href="https://github.com/username/react-pluggable-layouts/issues">Issues</FooterLink>
-            <FooterLink href="https://github.com/username/react-pluggable-layouts/blob/main/LICENSE">License</FooterLink>
+            <FooterLink href="https://github.com/Nom-nom-hub/react-pluggable-layouts/issues">Issues</FooterLink>
+            <FooterLink href="https://github.com/Nom-nom-hub/react-pluggable-layouts/blob/main/LICENSE">License</FooterLink>
           </div>
         </div>
 
